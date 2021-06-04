@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Harry",
+    "id": 1,
+    "img": "/images/galery/gun/Harry.jpg",
+    "artist": "WAYNE DANZA",
+    "about": "Smith & Wesson model 29.44 Magnum",
+    "describe": "Bic Bleu sur papier",
+    "size": "51.5 X 68.5 Cm",
+    "number": "Piéce unique 2020",
+    "price": "2000€"
+  },
+
+  {
+    "name": "Léon",
+    "id": 2,
+    "img": "/images/galery/gun/Leon.jpg",
+    "artist": "WAYNE DANZA",
+    "about": "Beretta 92 ",
+    "describe": "Bic Bleu sur papier",
+    "size": "51.5 X 68.5 Cm",
+    "number": "Piéce unique 2020",
+    "price": "2000€"
+  },
+
+  {
+    "name": "James",
+    "id": 3,
+    "img": "/images/galery/gun/James.jpg",
+    "artist": "WAYNE DANZA",
+    "about": "Walther PPk",
+    "describe": "Bic Bleu sur papier",
+    "size": "51.5 X 68.5 Cm",
+    "number": "Piéce unique 2020",
+    "price": "2000€"
+  },
+
+  {
+    "name": "Solo",
+    "id": 4,
+    "img": "/images/galery/gun/Solo.jpg",
+    "artist": "WAYNE DANZA",
+    "about": "Blaster",
+    "describe": "Bic Bleu sur papier",
+    "size": "51.5 X 68.5 Cm",
+    "number": "Piéce unique 2020",
+    "price": "2000€"
+  }
+]
