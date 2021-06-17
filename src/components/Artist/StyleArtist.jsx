@@ -22,6 +22,7 @@ const StyleArtist = styled.figure`
     margin-bottom: 4%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size:0.8em;
   }
   .Artist {
     width: 50vw;

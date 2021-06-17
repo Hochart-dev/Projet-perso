@@ -6,7 +6,7 @@ import Header from './components/Header/Header';
 import Artist from './components/Artist/Artist';
 import Show from './components/Show/Show';
 import Press from './components/Press/Press';
-import Contact from './components/Contact/Contact';
+import Contact from './components/ContactUs/Contact';
 import Footer from './components/Footer/Footer';
 import Artworks from './components/Artworks/Artworks';
 import Picture from './components/Picture/Picture';

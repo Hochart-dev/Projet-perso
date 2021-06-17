@@ -2,18 +2,17 @@ import styled from 'styled-components';
 
 const StylePicture = styled.div`
   .caption {
-    border: 2px red dotted;
-    font-size: 2em;
+    font-size: 1.5em;
     width: 40%;
   }
 
   article {
-    margin-top: -2%;
-    width: 60%;
-    height: 70%;
+    margin-top: 1%;
+    width: 50%;
+    height: 60%;
     display: flex;
     min-width: 200px;
-    border: 2px blue dotted;
+
     margin-left: 20%;
     margin-right: 20%;
     align-items: center;
@@ -23,7 +22,6 @@ const StylePicture = styled.div`
   .pictures {
     width: 55%;
     height: auto;
-    border: 2px yellowgreen dotted;
   }
 `;
 

@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+/* import ReactImageMagnify from 'react-image-magnify'; */
 import StylePicture from './StylePicture';
 
 function Picture() {

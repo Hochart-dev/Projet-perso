@@ -18,21 +18,18 @@ const StyleHeader = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px red dotted;
     width: 15vw;
   }
 
   figcaption {
-    font-size: 1.5em;
+    font-size: 1.3em;
     align-items: flex-end;
   }
 
   .header {
     display: flex;
-    height: 10vw;
+    height: 8vw;
     align-items: flex-end;
-
-    margin-left: 2%;
   }
 
   ul {
@@ -46,8 +43,8 @@ const StyleHeader = styled.header`
 
   li {
     list-style: none;
-    font-size: 1.5em;
-    margin-left: 2%;
+    font-size: 1.2em;
+    margin-left: 3%;
   }
 `;
 
