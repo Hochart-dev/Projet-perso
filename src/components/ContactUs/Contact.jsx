@@ -20,17 +20,10 @@ export default function ContactUs() {
               placeholder="insert your email here"
             />
           </label>
-          <label htmlFor="subject">
-            <input
-              type="text"
-              name="subject"
-              placeholder="insert your email here"
-            />
-          </label>
           <label htmlFor="message">
             <textarea name="html_message" placeholder="insert your text here" />
           </label>
-          <input type="submit" value="Send" />
+          <input type="submit" value="send" />
         </form>
       </div>
     </StyleForm>
