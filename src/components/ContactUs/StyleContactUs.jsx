@@ -5,9 +5,14 @@ const StyleForm = styled.div`
     display: flex;
     width: 80vw;
     height: 100vw;
-
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    margin-top: 3%;
+  }
+
+  head {
+    display: flex;
     justify-content: space-around;
   }
 
@@ -27,16 +32,16 @@ const StyleForm = styled.div`
     width: 30vw;
     height: 20vw;
     padding: 3px;
-    border: 2px solid #f5c5c5;
-    box-shadow: 1px 1px 2px #c0c0c0 inset;
+    border: 2px solid #5f5a5a;
+    box-shadow: 2px 2px 4px #c0c0c0 inset;
     padding: 13px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;
+    border-radius: 8px;
   }
 
   input {
-    border: 2px solid #f5c5c5;
+    border: 2px solid #5f5a5a;
     box-shadow: 3px 3px 6px #c0c0c0 inset;
     height: 2vw;
     text-align: center;
@@ -44,6 +49,7 @@ const StyleForm = styled.div`
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    width: 10vw;
   }
 `;
 

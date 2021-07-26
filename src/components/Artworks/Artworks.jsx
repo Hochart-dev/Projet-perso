@@ -47,7 +47,7 @@ function Artworks() {
   );
 }
 
-// PersonsGallery.propTypes = {
+// Picture.propTypes = {
 // pictures: PropTypes.arrayOf(PropTypes.object).isRequired,
 // };
 export default Artworks;
