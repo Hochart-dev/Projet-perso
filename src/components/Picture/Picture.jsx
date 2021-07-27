@@ -1,43 +1,32 @@
-import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
 import StylePicture from './StylePicture';
 
-function Picture({
-  name,
-  artist,
-  about,
-  description,
-  size,
-  number,
-  price,
-  url,
-}) {
+function Picture() {
+  const { id } = useParams();
+  const [picture, setPicture] = useState({});
+
+  useEffect(() => {
+    axios.get(`http://localhost:8000/api/gallery/${id}`).then(({ data }) => {
+      setPicture(data);
+    });
+  }, []);
+
   return (
     <StylePicture>
       <article>
-        <img className="pictures" src={url} alt={Picture.name} />
-        <div className="caption">
-          <p>{name}</p>
-          <p>{artist}</p>
-          <p>{about}</p>
-          <p>{description}</p>
-          <p>{size}</p>
-          <p>{number}</p>
-          <p>{price}</p>
-        </div>
+        <img className="pictures" src={picture.url} alt={picture.name} />
+        <p>{picture.name}</p>
+        <p>{picture.artist}</p>
+        <p>{picture.about}</p>
+        <p>{picture.description}</p>
+        <p>{picture.size}</p>
+        <p>{picture.number}</p>
+        <p>{picture.price}</p>
       </article>
     </StylePicture>
   );
 }
-
-Picture.propTypes = {
-  name: PropTypes.string.isRequired,
-  artist: PropTypes.string.isRequired,
-  about: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-};
 
 export default Picture;

@@ -29,15 +29,15 @@ const StyleForm = styled.div`
 
   textarea {
     resize: none;
-    width: 30vw;
-    height: 20vw;
+    width: 600px;
+    height: 400px;
     padding: 3px;
     border: 2px solid #5f5a5a;
     box-shadow: 2px 2px 4px #c0c0c0 inset;
     padding: 13px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
   }
 
   input {
@@ -48,8 +48,12 @@ const StyleForm = styled.div`
     padding: 13px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 10vw;
+  }
+
+  @media {
+    max-width: 80%;
   }
 `;
 

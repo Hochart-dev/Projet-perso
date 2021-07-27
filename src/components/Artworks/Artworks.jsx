@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-// import Picture from '../Picture/Picture';
 import StyleArtwork from './StyleArtwork';
 
 function Artworks() {
@@ -12,7 +10,7 @@ function Artworks() {
     axios.get('http://localhost:8000/api/gallery').then(({ data }) => {
       setInfosPicture(data);
     });
-  });
+  }, []);
 
   return (
     <StyleArtwork>
@@ -22,8 +20,7 @@ function Artworks() {
             <article>
               <Link
                 to={{
-                  pathname: `/Picture`,
-                  state: { picture },
+                  pathname: `/Picture/${picture.id}`,
                 }}
               >
                 <img

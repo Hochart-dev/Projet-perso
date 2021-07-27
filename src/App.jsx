@@ -25,7 +25,7 @@ function App() {
         <Route path="/Press" component={Press} />
         <Route path="/Contact" component={Contact} />
         <Route path="/Artworks" component={Artworks} />
-        <Route path="/Picture" component={Picture} />
+        <Route path="/Picture/:id" component={Picture} />
       </Switch>
       <Footer />
     </div>

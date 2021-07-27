@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StylePicture = styled.div`
-  .caption {
+  caption {
     font-size: 1.5em;
     width: 40%;
   }
@@ -12,6 +12,7 @@ const StylePicture = styled.div`
     height: 60%;
     display: flex;
     min-width: 200px;
+    border: 3px darkviolet dotted;
 
     margin-left: 20%;
     margin-right: 20%;
