@@ -7,6 +7,14 @@ const StyleArtwork = styled.div`
     justify-content: space-around;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    color: black;
+  }
+
   article {
     margin-top: 3%;
     width: 20vw;

@@ -17,13 +17,15 @@ function Picture() {
     <StylePicture>
       <article>
         <img className="pictures" src={picture.url} alt={picture.name} />
-        <p>{picture.name}</p>
-        <p>{picture.artist}</p>
-        <p>{picture.about}</p>
-        <p>{picture.description}</p>
-        <p>{picture.size}</p>
-        <p>{picture.number}</p>
-        <p>{picture.price}</p>
+        <div>
+          <p>{picture.name}</p>
+          <p>{picture.artist}</p>
+          <p>{picture.about}</p>
+          <p>{picture.description}</p>
+          <p>{picture.size}</p>
+          <p>{picture.number}</p>
+          <p>{picture.price}</p>
+        </div>
       </article>
     </StylePicture>
   );
