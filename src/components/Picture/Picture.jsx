@@ -8,7 +8,7 @@ function Picture() {
   const [picture, setPicture] = useState({});
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/api/gallery/${id}`).then(({ data }) => {
+    axios.get(`http://localhost:8000/gallery/${id}`).then(({ data }) => {
       setPicture(data);
     });
   }, []);

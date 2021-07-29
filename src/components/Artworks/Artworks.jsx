@@ -1,15 +1,20 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import dotenv from 'dotenv';
 import StyleArtwork from './StyleArtwork';
+
+dotenv.config();
 
 function Artworks() {
   const [infosPicture, setInfosPicture] = useState(['', '']);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/gallery').then(({ data }) => {
-      setInfosPicture(data);
-    });
+    axios
+      .get(`${process.env.REACT_APP_BACKEND_URL}/gallery`)
+      .then(({ data }) => {
+        setInfosPicture(data);
+      });
   }, []);
 
   return (
@@ -44,7 +49,4 @@ function Artworks() {
   );
 }
 
-// Picture.propTypes = {
-// pictures: PropTypes.arrayOf(PropTypes.object).isRequired,
-// };
 export default Artworks;
